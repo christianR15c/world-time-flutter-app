@@ -21,8 +21,10 @@ class _LoadingState extends State<Loading> {
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': instance.location,
       'flag': instance.flag,
-      'time': instance.time
+      'time': instance.time,
+      'isDaytime': instance.isDaytime
     });
+    
   }
 
   @override
@@ -34,10 +36,9 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.all(50),
-        child: Text('loading'),
-      ),
+      body: Center(
+
+      )
     );
   }
 }
